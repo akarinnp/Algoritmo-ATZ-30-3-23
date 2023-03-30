@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03</title>
+
+    <style>
+        .vermelho{
+            color: red;
+        }
+        .verde{
+            color: green;
+        }
+        body{
+            font-family: sans-serif;
+            padding: 50px;
+            background-color: rgb(236, 188, 85);
+        
+
+        }
+        .body{
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: space-between;
+            border: 50px solid rgb(228, 131, 4);
+        }
+        .body div,
+        .body #conteudo {
+            width: 40%;
+            border: 2px solid rgb(124, 28, 148);
+            border-radius: 0px;
+            box-shadow: 3px 3px 3px rgb(255, 230, 6) ;
+
+        }
+        .body h1{
+            text-align: center;
+            border-bottom: 2px solid rgb(0, 255, 0);
+
+        }
+        .body div label{
+            font-size: 20px;
+            font-style: italic;
+
+        }
+
+        .body div input{
+            width: 100%;
+            border-radius: 0px;
+            height: 30px;
+
+        }
+
+        .body div button{
+            width: 100%;
+            height: 30px;
+            border-radius: 15px;
+            border-color: aquamarine;
+            background-color: aquamarine;
+            color: white;
+        }
+        .body div button:hover{
+            background-color: white;
+            color: aquamarine;
+            transition: .5s;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+<h1>Exercicio</h1>
+    <div class="body">
+    <div>
+        <label>Mês</label>
+        <input type="number" id="mes" min="1"
+        max="12" placeholder="Número do mês" ><br><br>
+        <button id="btn">Escrever mês correspondente</button>
+    </div></div>
+
+    <div id="conteudo"> </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
